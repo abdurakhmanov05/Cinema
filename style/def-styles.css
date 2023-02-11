@@ -1,0 +1,323 @@
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+/* total width */
+.scrollbar::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.scrollbar::-webkit-scrollbar-track:hover {
+  background-color: #f4f4f4;
+}
+
+/* scrollbar itself */
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 5px solid #fff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a5;
+  border: 4px solid #f4f4f4;
+}
+
+/* set button(top and bottom of the scrollbar) */
+.scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
+.section {
+  overflow: hidden !important;
+}
+
+.slide {
+  height: 100% !important;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 60px;
+  border: none;
+  width: 70px;
+  height: 70px;
+  background: url(../assets/icons/left.svg) no-repeat;
+  cursor: pointer;
+  background-position: center;
+  background-color: #2C2D31;
+  border-radius: 100%;
+}
+
+.fp-controlArrow.fp-next {
+  right: 60px;
+  border: none;
+  width: 70px;
+  height: 70px;
+  background: url(../assets/icons/right.svg) no-repeat;
+  cursor: pointer;
+  background-position: center;
+  background-color: #2C2D31;
+  border-radius: 100%;
+}
+
+:root {
+  --blue-gradient: linear-gradient(310.2deg, #25254C 5.48%, #6A6DBD 102.12%);
+  --red-gradient: linear-gradient(#FA557B 0%, #BB2649 100%);
+  --purple-light: rgba(250, 85, 123, 1);
+  --purple-gradient: linear-gradient(310.2deg, #FA557B 5.48%, #BB2649 102.12%);
+  --blue-dark: rgba(44, 45, 88, 1);
+}
+
+.blue {
+  display: block;
+  background: var(--blue-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  translate: -60px 0px !important;
+  padding: 5px 0px;
+}
+
+.red {
+  background: var(--red-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5px 0px;
+}
+
+.btn-gradient {
+  all: unset;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 34px;
+  background: var(--blue-gradient);
+  padding: 20px 27px;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+.btn-gradient:active {
+  scale: 1.1;
+  filter: brightness(150%);
+}
+
+.btn-regular, .btn-regular-rounded {
+  all: unset;
+  padding: 11px 30px;
+  color: #fff;
+  border-radius: 54px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--purple-light);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: start;
+  transition: 0.2s ease;
+}
+.btn-regular:active, .btn-regular-rounded:active {
+  scale: 1.1;
+}
+
+.btn-regular-rounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 10px 10px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--blue-dark);
+}
+.btn-regular-rounded img {
+  rotate: 180deg;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.mb-element {
+  display: none !important;
+}
+
+.span-lg {
+  font-size: 48px;
+  font-style: bold;
+}
+
+.span-sm {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(37, 37, 76);
+}
+
+.span-md {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(37, 37, 76);
+}
+
+.span-md-plus {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.def-item {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(206, 207, 238, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  padding-bottom: 40px;
+  border-radius: 25px;
+  transition: 0.2s ease;
+  scale: 1;
+}
+.def-item img {
+  border-radius: 25px;
+  margin-bottom: 14px;
+  width: 100%;
+  max-height: 310px;
+}
+.def-item .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+.def-item:hover {
+  scale: 1.1;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.related {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+}
+.related .item {
+  min-width: 200px;
+  height: 100%;
+  border-radius: 24px;
+  background-color: rgb(217, 217, 217);
+}
+
+.first, .modal-bg {
+  padding-top: 20px;
+}
+.first .bg-element, .modal-bg .bg-element {
+  width: 580px;
+  height: 470px;
+  rotate: -44deg;
+  background-color: rgba(167, 167, 255, 0.45);
+  border-radius: 200px;
+  filter: blur(100px);
+  box-shadow: 0px 0px 30px rgba(167, 167, 255, 0.45);
+  fill: solid;
+  position: absolute;
+  z-index: -1;
+}
+.first .bg-element:nth-child(2), .modal-bg .bg-element:nth-child(2) {
+  left: -270px;
+  bottom: 100px;
+  width: 300px;
+  background-color: rgba(104, 5, 242, 0.4);
+}
+.first .bg-element:nth-child(3), .modal-bg .bg-element:nth-child(3) {
+  bottom: -400px;
+  left: 0px;
+  background-color: rgba(242, 100, 68, 0.3);
+}
+.first .bg-element:nth-child(4), .modal-bg .bg-element:nth-child(4) {
+  top: -100px;
+  left: 40px;
+}
+.first .bg-element:nth-child(5), .modal-bg .bg-element:nth-child(5) {
+  right: 0px !important;
+  bottom: 100px;
+  background-color: rgba(242, 100, 68, 0.3);
+}
+.first .bg-element:nth-child(1), .modal-bg .bg-element:nth-child(1) {
+  right: 100px !important;
+  bottom: 100px;
+  background-color: rgba(242, 100, 68, 0.3);
+}
+.first .bg-element:nth-child(6), .modal-bg .bg-element:nth-child(6) {
+  right: -400px !important;
+  bottom: -380px;
+  background-color: rgb(104, 5, 242);
+}
+
+.navigation-custom {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  translate: -50% 0%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  gap: 20px;
+}
+.navigation-custom .progress {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(217, 217, 217);
+  border-radius: 35px;
+  overflow: hidden;
+}
+.navigation-custom .progress .fill {
+  transition: 0.5s ease;
+  width: 20%;
+  height: 10px;
+  border-radius: 35px;
+  background-color: rgb(37, 37, 76);
+}
+.navigation-custom .progress .empty {
+  width: 20%;
+  height: 10px;
+  border-radius: 35px;
+}
+.navigation-custom .prev, .navigation-custom .next {
+  cursor: pointer;
+}
+.navigation-custom .prev:active, .navigation-custom .next:active {
+  filter: brightness(25%);
+}/*# sourceMappingURL=def-styles.css.map */

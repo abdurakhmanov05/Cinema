@@ -1,0 +1,14 @@
+let acc = document.querySelectorAll('.acc-item')
+
+acc.forEach(elem => {
+    let btn = elem.querySelector('button')
+    btn.onclick = () => {
+        if(elem.classList.contains('acc-item-active')) {
+            elem.classList.remove('acc-item-active')
+            return
+        }
+        acc.forEach(el => el.classList.remove('acc-item-active'))
+
+        elem.classList.toggle('acc-item-active')
+    }
+})

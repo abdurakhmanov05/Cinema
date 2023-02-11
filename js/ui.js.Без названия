@@ -1,0 +1,53 @@
+let openMenuBtns = document.querySelectorAll('[data-open]')
+let closeMenuBtns = document.querySelectorAll('[data-close]')
+let headerFormModal = document.querySelector('header')
+let modal = document.querySelector('.modal')
+let mdoalBg = document.querySelector('.modal-bg')
+let searchForm = document.querySelector('.search-form')
+let hiddenInp = searchForm.querySelector('input')
+let wasRemoved = false
+
+openMenuBtns.forEach(btn => {
+    btn.onclick = () => {
+        modal.style.display = "flex"
+        mdoalBg.style.display = "block"
+        setTimeout(() => {
+            modal.style.opacity = "1"
+            mdoalBg.style.opacity = "1"
+        }, 200);
+
+        // working with change headers style
+        headerFormModal.classList.add('modal-active')   
+        if(headerFormModal.classList.contains('active')) {
+            headerFormModal.classList.remove('active')      
+            wasRemoved = true
+        }
+    }
+});
+closeMenuBtns.forEach(btn => {
+    btn.onclick = () => {
+        modal.style.opacity = "0"
+        mdoalBg.style.opacity = "0"
+        setTimeout(() => {
+            modal.style.display = "none"
+            mdoalBg.style.display = "none"
+        }, 200);
+
+        // working with change headers style
+        headerFormModal.classList.remove('modal-active')        
+        if(wasRemoved) {
+            headerFormModal.classList.add('active')        
+
+            setTimeout(() => {
+                wasRemoved = false
+            }, 1000);
+        }
+    }
+});
+
+searchForm.onclick = () => {
+    hiddenInp.classList.add('show-inp')
+    setTimeout(() => {
+        hiddenInp.classList.remove('show-inp')
+    }, 10000)
+}

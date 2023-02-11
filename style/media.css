@@ -1,0 +1,367 @@
+@media only screen and (max-width: 1250px) {
+  .first-section {
+    gap: 50px;
+  }
+  .first-section .left .greetings h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .heading h2 {
+    font-size: 44px !important;
+    width: 100%;
+  }
+  .heading span {
+    font-size: 28px;
+  }
+  .form-section {
+    width: 90%;
+  }
+  .form-section form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .navigation-custom, .toDown {
+    display: none !important;
+  }
+  .about-store .top-side {
+    gap: 20px;
+  }
+  .about-store .top-side .right,
+.about-store .top-side .left {
+    width: 100% !important;
+  }
+  .about-store .top-side .right span,
+.about-store .top-side .left span {
+    font-size: 28px;
+  }
+  .about-store .top-side .right .col,
+.about-store .top-side .left .col {
+    margin-bottom: 20px;
+  }
+  .about-store .top-side .right .col:last-child .span-md-plus,
+.about-store .top-side .right .col:last-child p,
+.about-store .top-side .left .col:last-child .span-md-plus,
+.about-store .top-side .left .col:last-child p {
+    color: #000 !important;
+  }
+  .mb-element {
+    display: block !important;
+  }
+  .heading h2 {
+    font-size: 30px !important;
+    line-height: 34px !important;
+  }
+  .heading .span {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .first-section {
+    width: 90%;
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .first-section .left .greetings {
+    padding: 0px;
+    gap: 40px;
+  }
+  .first-section .left .greetings h1 .blue {
+    display: inline;
+    translate: 0px 0px !important;
+  }
+  .first-section .left .greetings h1 .red {
+    display: inline;
+  }
+  .first-section .left .greetings .mb-element {
+    display: block !important;
+    width: 100%;
+    height: 300px;
+    border-radius: 24px;
+  }
+  .first-section .right {
+    display: none;
+  }
+  .form-section form {
+    padding: 50px 20px;
+  }
+  .form-section form .form-block {
+    flex-direction: column;
+  }
+  .modal {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 0px;
+    flex-direction: column-reverse;
+    overflow: scroll !important;
+    padding: 120px 20px !important;
+  }
+  .modal .left {
+    width: 100% !important;
+  }
+  .modal .left a {
+    font-size: 24px !important;
+    font-weight: 500;
+  }
+  .modal .right {
+    width: 100% !important;
+    padding-top: 100px;
+  }
+  .modal .right .big-anker {
+    font-size: 24px !important;
+    margin-bottom: 4px;
+  }
+  .modal .right .danger {
+    font-size: 20px !important;
+    margin-bottom: 4px;
+  }
+  .footer footer {
+    flex-direction: column;
+  }
+  .footer footer .left,
+.footer footer .right {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .mySwiper,
+.mySwiper2 {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-big {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .btn-group {
+    display: none !important;
+  }
+  .show-inp {
+    width: 100px !important;
+  }
+  .fp-controlArrow.fp-prev {
+    left: 10px !important;
+    scale: 0.8;
+    opacity: 0.7;
+  }
+  .fp-controlArrow.fp-next {
+    scale: 0.8;
+    right: 10px !important;
+    opacity: 0.7;
+  }
+  header .header-content {
+    width: 100%;
+  }
+  header .header-content .lang {
+    display: none;
+  }
+  header .header-content .social-media-container {
+    display: none;
+  }
+  header .header-content .head-logo {
+    width: 80px;
+    height: 25px;
+    object-fit: contain;
+    translate: 20px;
+  }
+  header::after {
+    margin-top: 10px;
+  }
+  .first-section .left {
+    width: 100%;
+  }
+  .first-section .left .greetings {
+    width: 100%;
+    gap: 10px;
+  }
+  .first-section .left .greetings h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .first-section .left .greetings p {
+    font-size: 18px;
+    line-height: 20px;
+    width: 100%;
+    opacity: 1;
+  }
+  .first-section .left .greetings .fam-img {
+    width: 100%;
+  }
+  .first-section .left .greetings .mb-element {
+    height: 250px;
+    object-fit: cover;
+  }
+  .shopSection::after {
+    height: 45%;
+  }
+  .shopSection .wrapper {
+    width: 90%;
+    margin-top: 0px !important;
+    padding-top: 100px;
+  }
+  .shopSection .wrapper h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .shopSection .wrapper .stats,
+.shopSection .wrapper .map-container {
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .shopSection .wrapper .stats .map-item iframe,
+.shopSection .wrapper .map-container .map-item iframe {
+    height: 100% !important;
+  }
+  .shopSection .wrapper .map-container {
+    height: 100%;
+    gap: 20px;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 20px 0px;
+  }
+  .heading h2 {
+    font-size: 34px;
+    line-height: 28px;
+  }
+  .heading span {
+    font-size: 18px;
+  }
+  .heading .btn-gradient {
+    font-size: 12px;
+  }
+  .carousel-wrapper {
+    width: 100%;
+  }
+  .carousel-wrapper .container {
+    gap: 14px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer footer {
+    gap: 20px;
+  }
+  .footer footer .left,
+.footer footer .right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer footer .left .foot-block,
+.footer footer .right .foot-block {
+    align-items: flex-start;
+    text-align: start;
+  }
+  .footer footer .left .foot-logo,
+.footer footer .right .foot-logo {
+    width: 100%;
+    object-fit: contain;
+  }
+  .footer footer .right {
+    flex-direction: column-reverse;
+  }
+  .carousel-wrapper {
+    padding-top: 80px;
+  }
+  .carousel-wrapper .about-store .top-side {
+    flex-direction: column;
+  }
+  .carousel-wrapper .about-store .top-side .left,
+.carousel-wrapper .about-store .top-side .right {
+    width: 100% !important;
+  }
+  .carousel-wrapper .about-store .top-side span {
+    color: var(--blue-dark) !important;
+    text-shadow: unset !important;
+  }
+  #schedule .shopSection {
+    padding-top: 100px;
+  }
+  #schedule .heading .span-md-plus {
+    width: 100% !important;
+  }
+  #schedule .schedule-wrapper {
+    width: 90% !important;
+  }
+  #schedule .accordion-wrapper h2 {
+    text-align: start !important;
+    font-size: 30px !important;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #schedule .accordion-wrapper .accordion-container {
+    gap: 20px !important;
+  }
+  #schedule .accordion-wrapper .accordion-container .acc-item {
+    padding: 20px 20px !important;
+  }
+  #schedule .accordion-wrapper .accordion-container .acc-item .top h2 {
+    font-size: 24px !important;
+    margin-bottom: 0px;
+  }
+  #schedule .accordion-wrapper .accordion-container .acc-item .top button {
+    scale: 0.8 !important;
+  }
+  #schedule .accordion-wrapper .accordion-container .acc-item .bottom .row .span-md-plus {
+    font-size: 18px;
+  }
+  #schedule .accordion-wrapper .accordion-container .acc-item .bottom .description {
+    gap: 5px !important;
+  }
+  #schedule .accordion-wrapper .accordion-container .row {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+  #schedule .accordion-wrapper .accordion-container .row .span-md-plus {
+    margin-right: 10px !important;
+  }
+  #schedule .accordion-wrapper .accordion-container .row .span-md {
+    font-size: 16px;
+  }
+  #events {
+    overflow: unset !important;
+  }
+  #events .events {
+    width: 90%;
+  }
+  #events .events h2 {
+    font-size: 30px;
+  }
+  #events .events .event-video {
+    height: 400px;
+  }
+  #events .events .sub-title-container .span-lg {
+    font-size: 30px;
+  }
+  #events .events .sub-title-container .red {
+    padding: 0px !important;
+    font-size: 18px;
+  }
+  #events .events .event-information {
+    width: 100%;
+  }
+  #events .events .event-information p {
+    font-size: 18px;
+  }
+  #form {
+    overflow: unset !important;
+  }
+  .why-fam {
+    padding: 40px 20px !important;
+    text-align: center;
+  }
+  .why-fam .job-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  .why-fam .job-container .job-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px !important;
+  }
+}/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,120 @@
+.modal-bg {
+  transition: 1s ease;
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 10000;
+}
+.modal-bg .bg-element {
+  z-index: 0;
+}
+
+.modal {
+  transition: 1s ease;
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 20000;
+  display: none;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  padding-top: 120px;
+  overflow-y: scroll !important;
+}
+.modal .left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.modal .left .col {
+  gap: 10px;
+}
+.modal .left .col a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(37, 37, 76);
+  transition: 0.2s ease;
+}
+.modal .left .col a:hover {
+  color: rgb(187, 38, 73);
+}
+.modal .left .col a:hover svg {
+  stroke: rgb(187, 38, 73);
+}
+.modal .left .col a:hover svg .fill {
+  fill: rgb(187, 38, 73);
+}
+.modal .left .col .small-anker {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+.modal .left .social-media {
+  gap: 20px;
+  margin-top: 20px;
+}
+.modal .right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal .right .big-anker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(37, 37, 76);
+  margin-bottom: 10px;
+  translate: -20px 0px;
+  transition: 0.4s ease;
+}
+.modal .right .big-anker::before {
+  content: "";
+  transition: 0.4s ease;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(37, 37, 76);
+  border-radius: 100%;
+  translate: -20px 0px;
+  opacity: 0;
+}
+.modal .right .big-anker:hover {
+  translate: 0px 0px;
+}
+.modal .right .big-anker:hover::before {
+  translate: 0px 0px !important;
+  opacity: 1 !important;
+}
+.modal .right .danger {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(200, 48, 83);
+  margin-bottom: 10px;
+}
+.modal .right .small {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 5px;
+}
+.modal .right .small:hover {
+  color: var(--blue-dark);
+  text-decoration: underline;
+}/*# sourceMappingURL=modal.css.map */
